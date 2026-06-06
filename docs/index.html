@@ -1,70 +1,265 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <h1> Informações e orientações sobre a criação 
-            do portfólio digital.
-        </h1>
-        <section>        <section>
-            <h1> Requisitos de Informação </h1>
-            <p>Os requisitos de informação delimitam o escopo do conteúdo que
-                deve ser mostrado no portfólio.
-            </p>
-            <p>Por se tratar de um portfólio profissional, o(a) aluno(a) deve acrescentar
-                informações relevantes à sua trajetória acadêmica. A relevância deve
-                considerar tanto o ponto de vista do aluno, como um profissional 
-                formação, como o da Faculdade de Tecnologia de Jacareí,
-                como instituição formadora de profissionais qualificados para atuar no
-                mercado de trabalho.
-            </p>
-            <ul>
-                <li> O portfólio deverá ser composto por, no máximo,
-                    três seções.
-                </li>
-                <li> As seções deverão incluir informações tais como:</li>
-                <ul>                  
-                    <li>Apresentação pessoal. </li>
-                    <li>Projetos acadêmicos. </li>
-                    <li>Projetos profissionais. </li>
-                    <li>Projetos pessoais. </li>
-                    <li>Áreas de atuação. </li>
-                    <li>Outras informações relevantes.</li>
-                </ul>
-                <li> As tecnologias que porventura sejam citadas no escopo dos
-                    trabalhos que foram desenvolvidos, podem ser agrupadas em uma
-                    única seção (exemplo: ao final dos projetos, sintetizando a 
-                    informação) ou em uma seção específica onde o(a) aluno(a) cita
-                    suas habilidades e conhecimentos tecnológicos.
-                </li>
-            </ul>
-            <p> ATENÇÃO: Na seção de apresentação pessoal, o(a) aluno(a) deve acrescentar
-                uma foto compatível com o propósito do portfólio. 
-            </p>
-        </section>
-        <section>
-            <h1> Restrições de Tecnologia </h1>
-            <ul>
-                <li> O portfólio deve ser confeccionado com tecnologias que permitam
-                    o processamento totalmente do lado do cliente (ex. HTML5, CSS3, JavaScript,
-                    arquivos estáticos de imagem png, etc.)
-                </li>
-                <li> Caso o repositório do portfólio dependa de bibliotecas estáticas para
-                    renderização da interface, essas devem ser devidamente "instaladas" no 
-                    portfólio (exemplo: pasta lib/) de forma que a interface não se torne
-                    desconfigurada no caso de quebra da referência da biblioteca (exemplo: mudança
-                    de link externo que provê o arquivo estático da biblioteca. )
-                </li>
-            </ul>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Digital - Orientações</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-        </section>
-        <section>
-            <h1> Restrições de Dados</h1>
-            <ul>
-                <li> A totalidade dos dados necessários para a exibição do portfólio deve
-                    ser disponibilizada de modo estático no próprio repositório do portfólio.
-                </li>
-            </ul>
-        </section>
-    </body>
+<header class="hero">
+    <h1>Portfólio Digital</h1>
+    <p>Orientações Oficiais - Desenvolvimento de Software Multiplataforma</p>
+</header>
+
+<main class="container">
+
+    <section>
+        <h2>Objetivo</h2>
+        <p>
+            O Portfólio Digital tem como objetivo apresentar a trajetória acadêmica,
+            profissional e pessoal do aluno ao longo do curso de Desenvolvimento de
+            Software Multiplataforma da Fatec Jacareí.
+        </p>
+    </section>
+
+    <section>
+        <h2>1. Repositório e Publicação</h2>
+
+        <p>Cada aluno possui um repositório institucional no formato:</p>
+
+        <pre>https://github.com/fatec-jacarei-dsm-portfolio/ra[RA_DO_ALUNO]</pre>
+
+        <p>Todo o conteúdo do portfólio deve ser mantido dentro da pasta:</p>
+
+        <pre>/docs</pre>
+
+        <p>O portfólio é publicado pela instituição através do GitHub Pages:</p>
+
+        <pre>https://fatec-jacarei-dsm-portfolio.github.io/ra[RA_DO_ALUNO]/</pre>
+
+        <div class="alert">
+            <p>O link informado no README deve apontar obrigatoriamente para esse endereço.</p>
+			<p>Não serão considerados links para outras plataformas de hospedagem.</p>
+        </div>
+
+        <h3>Pré-requisito</h3>
+
+        <p>
+            O professor responsável criará o repositório de cada aluno. O aluno deverá
+            aceitar o convite pelo GitHub para realizar os envios.
+        </p>
+
+        <h3>Termo de Consentimento</h3>
+
+        <p>
+            Todo aluno deverá assinar um termo declarando ciência de que a Fatec
+            armazenará seus projetos e vídeos para fins de auditoria acadêmica.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. README</h2>
+
+        <p>O arquivo README.md deve permanecer na raiz do repositório.</p>
+
+        <pre># Portfólio de Projetos - Fatec Jacareí
+
+**Aluno:** [nome do aluno]  
+**Curso:** Desenvolvimento de Software Multiplataforma  
+**Turma:** [semestre e ano de ingresso]
+
+---
+
+**Portfólio Online**
+
+🔗 [Acesse o Portfólio](LINK_PARA_PORTFOLIO)
+
+---
+
+**Vídeos de Apresentação**
+
+🎤 2DSM - [Vídeo](LINK_VIDEO_2DSM)  
+🎤 4DSM - [Vídeo](LINK_VIDEO_4DSM)  
+🎤 6DSM - [Vídeo](LINK_VIDEO_6DSM)</pre>
+
+        <h3>Requisitos do README</h3>
+
+        <ul>
+            <li>Utilizar o template fornecido.</li>
+            <li>Informar corretamente a turma de ingresso.</li>
+            <li>Informar o link do portfólio online.</li>
+            <li>Manter atualizados os links dos vídeos.</li>
+            <li>Preservar os vídeos produzidos nas avaliações anteriores.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Estrutura do Portfólio</h2>
+
+        <h3>Apresentação</h3>
+
+        <ul>
+            <li>Foto do aluno.</li>
+            <li>Breve apresentação pessoal.</li>
+            <li>Objetivos profissionais ou áreas de interesse.</li>
+        </ul>
+
+        <h3>Projetos</h3>
+
+        <p>Os projetos devem ser organizados em:</p>
+
+        <ul>
+            <li>Acadêmicos</li>
+            <li>Profissionais</li>
+            <li>Pessoais</li>
+        </ul>
+
+        <h4>Cada projeto deve apresentar:</h4>
+
+        <ul>
+            <li>Nome.</li>
+            <li>Breve descrição.</li>
+            <li>Contribuição pessoal. (* item mais importante)</li>
+            <li>Tecnologias utilizadas.</li>
+            <li>Link para o repositório.</li>
+            <li>Semestre em que foi feito.</li>
+        </ul>
+
+        <div class="info">
+            Projetos Integradores (ABP) devem indicar claramente o semestre em que
+            foram desenvolvidos.
+            Exemplo: <strong>1DSM – 1º Sem. 2026</strong>
+        </div>
+
+        <h3>Informações Complementares</h3>
+		<p>Podem ser incluídos:</p>
+        <ul>
+            <li>Formação acadêmica.</li>
+            <li>Cursos e certificações.</li>
+            <li>Conhecimentos técnicos.</li>
+            <li>Idiomas.</li>
+            <li>Hobbies e interesses.</li>
+        </ul>
+
+        <h3>Contatos</h3>
+		<p>Informar apenas redes sociais profissionais como:</p>
+        <ul>
+            <li>GitHub</li>
+            <li>LinkedIn</li>
+        </ul>
+
+        <div class="alert">
+            Não informar e-mail, telefone ou outros dados pessoais.
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Vídeo de Apresentação</h2>
+
+        <p>
+            O portfólio é avaliado nos semestres pares:
+        </p>
+
+        <ul>
+            <li>2DSM</li>
+            <li>4DSM</li>
+            <li>6DSM</li>
+        </ul>
+
+        <p>
+            Em cada avaliação, o aluno deverá produzir um vídeo de aproximadamente
+            1 minuto, no formato de pitch profissional.
+        </p>
+
+        <h3>O vídeo deve apresentar:</h3>
+
+        <ul>
+            <li>Quem é o aluno.</li>
+            <li>Áreas de interesse.</li>
+            <li>Contribuições individuais nas duas ABPs mais recentes.</li>
+            <li>Principais tecnologias utilizadas.</li>
+        </ul>
+		<br>
+		<p>Os projetos abordados em cada avaliação são:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Avaliação</th>
+                    <th>Projetos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2DSM</td>
+                    <td>1DSM e 2DSM</td>
+                </tr>
+                <tr>
+                    <td>4DSM</td>
+                    <td>3DSM e 4DSM</td>
+                </tr>
+                <tr>
+                    <td>6DSM</td>
+                    <td>5DSM e 6DSM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>5. Processo de Avaliação</h2>
+
+        <p>
+            A avaliação do portfólio ocorre apenas nos semestres pares.
+        </p>
+
+        <p>
+            Caso o aluno esteja cursando um semestre ímpar, mas matriculado em
+            alguma disciplina de semestre par, será considerada a última nota
+            obtida na avaliação regular do portfólio.
+        </p>
+
+        <p>
+            Recomenda-se atualização contínua do portfólio ao longo do curso.
+        </p>
+    </section>
+
+    <section>
+        <h2>6. Tecnologias Permitidas</h2>
+
+        <h3>Permitidas</h3>
+
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Não Permitidas</h3>
+
+        <ul>
+            <li>Frameworks com build ou empacotamento.
+			<ul>
+				<li>GitHub Actions (/workflows) está bloqueado.</li>
+			</ul>
+			</li>
+            <li>Bibliotecas externas hospedadas por terceiros.</li>
+            <li>Aplicações com backend.</li>
+            <li>APIs próprias para armazenamento ou recuperação de dados.</li>
+        </ul>
+
+        <div class="alert">
+            Todo o conteúdo deve funcionar exclusivamente a partir dos arquivos
+            armazenados no próprio repositório.
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Fatec Jacareí - Desenvolvimento de Software Multiplataforma</p>
+</footer>
+
+</body>
 </html>
